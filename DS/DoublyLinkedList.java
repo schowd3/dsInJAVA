@@ -56,18 +56,7 @@ public class DoublyLinkedList<T> implements Iterable<T> {
   public void add(T elem) {
     addLast(elem);
   }
-
-  // Add a node to the tail of the linked list, O(1)
-  public void addLast(T elem) {
-    if (isEmpty()) {
-      head = tail = new Node<T>(elem, null, null);
-    } else {
-      tail.next = new Node<T>(elem, tail, null);
-      tail = tail.next;
-    }
-    size++;
-  }
-
+  
   // Add an element to the beginning of this linked list, O(1)
   public void addFirst(T elem) {
     if (isEmpty()) {
@@ -78,7 +67,18 @@ public class DoublyLinkedList<T> implements Iterable<T> {
     }
     size++;
   }
-
+  
+  // Add a node to the tail of the linked list, O(1)
+  public void addLast(T elem) {
+    if (isEmpty()) {
+      head = tail = new Node<T>(elem, null, null);
+    } else {
+      tail.next = new Node<T>(elem, tail, null);
+      tail = tail.next;
+    }
+    size++;
+  }
+  
   // Check the value of the first node if it exists, O(1)
   public T peekFirst() {
     if (isEmpty()) throw new RuntimeException("Empty list");
