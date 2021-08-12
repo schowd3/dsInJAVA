@@ -6,7 +6,8 @@
 package com.williamfiset.datastructures.stack;
 
 public class Stack<T> implements Iterable<T> {
-
+  
+  //instance variiable of a linked list(doubly) provided by JAVA
   private java.util.LinkedList<T> list = new java.util.LinkedList<T>();
 
   // Create an empty stack
