@@ -256,7 +256,7 @@ public class DoublyLinkedList<T> implements Iterable<T> {
       }
     };
   }
-
+  //String representation of a linked list.
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
