@@ -1,3 +1,2 @@
 # dsInJAVA
-Practicing DS in JAVA
-Data Structure in JAVA
+Practicing Data Structure in JAVA
