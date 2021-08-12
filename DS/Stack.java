@@ -1,7 +1,7 @@
 /**
  * A linked list implementation of a stack
  *
- * @author William Fiset, siam al-mer Chowdhury
+ * @author William Fiset, Siam Al-mer Chowdhury
  */
 package com.williamfiset.datastructures.stack;
 
